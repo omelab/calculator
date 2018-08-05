@@ -113,136 +113,329 @@ if (isset($success) && $success !='') {
 ?>
 		<form id="contact-form" action="" method="post">
 			<div class="res">
-				<h1>Self Assessment Form</h1>
-				<h3 id="resultinfo"></h3>
-				<h4>Please submit your information</h4>
-				<a href="javascript:void(0)" class="backbutton" id="back"> Back </a>
+				<h1>Free Self-Assessment Test For Permeant Migration To Australia </h1>
 			</div>	
 			<div class="first-stepform">
-				<div class="row">
-					<label>
-						<span>Age : (required)</span> 
-						<select name="age" id="age" required autofocus>
-							<option value="0"> Select </option>
-							<option value="25">Between 18 to 24 years</option>
-							<option value="30">Between 25 to 32 Years</option>
-							<option value="25">Between 33 to 39 Years</option>
-							<option value="15">Between 40 to 44 Years</option>
-						</select>
-						<strong class="ageer"> this is requirefield</strong>
-					</label>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>Australian Skilled Visas</h3>
+						<h4>Select the below skilled visas you are eligible to apply.</h4>
+						<label class="controll-label">
+							<input type="radio" name="auskvisa" value="0" required><strong>Skilled Independent Subclass 189 - </strong> It's a non-Sponsored Visa so you don't need a sponsor for it. However, your occupation must be listed in latest Skilled Occupations List. For further details, check the Subclass 189 Visa page.
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="auskvisa" value="5"><strong>Skilled Nominated Subclass 190 - </strong> To apply for this visa you need nomination from a State or Territory Government Agency. Moreover, your occupation must be listed on the Consolidated Sponsored Occupations List (CSOL). For further information, visit the Subclas190 Visa page.
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="auskvisa" value="10"><strong>Skilled Regional (Provisional) Subclass 489 -</strong> requires sponsorship by a relative living in a designated area or a state or territory government.
+						</label>
+					</div>					
 				</div>
-				<div class="row">
-					<label>
-						<span>English : (required)</span>
-						<select name="english" id="english" required autofocus>
-							<option value="0">Competent English – 6.0 Each</option>
-							<option value="10">Proficient English – 7.0 Each</option>
-							<option value="20">Superior English – 8.0 Each</option>
-						</select>
-					</label>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>Age</h3>
+						<h4>Which age band do you fit into?</h4>
+						<label class="controll-label">
+							<select name="age">
+								<option value="0">My Age Group is: Under 18</option>
+								<option value="25">My Age Group is: 18 to 24</option>
+								<option value="30">My Age Group is: 25 to 32</option>
+								<option value="25">My Age Group is: 33 to 39</option>
+								<option value="15">My Age Group is: 40 to 44</option>
+							</select>
+						</label>
+					</div>					
 				</div>
-				<div class="row">
-					<label>
-						<span>Skilled Employment in last 10 Years - Outside Australia</span>
-						<select name="employment" id="employment">
-							<option value="0"> Select </option>
-							<option value="0">Less than 3 Years</option>
-							<option value="5">3 – 4 Years</option>
-							<option value="10">5 – 7 Years</option>
-							<option value="15">8 – 10 Years </option>
-						</select>
-					</label>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>My English Language is:</h3>
+						<label class="controll-label">
+							<input type="radio" name="elang" value="0" required>
+							<strong>Competent English: </strong> <br>
+							<ul>
+								<li>Passport from UK, USA, Ireland, Canada or NZ; or</li>
+								<li>IELTS: 6+ in each component; or</li>
+								<li>PTE Academic: 50+ in each component; or</li>
+								<li>Cambridge (CAE): 169+ in each component; or</li>
+								<li>TOEFL iBT: 12 in Listening, 13 Reading, 21 Writing, 18 Speaking</li>
+							</ul>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="elang" value="10" required>
+							<strong>Proficient English:</strong> <br>
+							<ul>
+								<li>IELTS: 7+ in each component; or</li>
+								<li>OET: B pass in each component; or</li>
+								<li>PTE Academic: 65+ in each component; or</li>
+								<li>Cambridge (CAE): 185+ in each component; or</li>
+								<li>TOEFL iBT: 24 in Listening, 24 Reading, 27 Writing, 23 Speaking</li>
+							</ul>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="elang" value="20" required>
+							<strong>Superior English:</strong> <br>
+							<ul>
+								<li>IELTS: 8+ in each component; or</li>
+								<li>OET: A pass in each component; or</li>
+								<li>PTE Academic: 79+ in each component; or</li>
+								<li>Cambridge (CAE): 200+ in each component; or</li>
+								<li>TOEFL iBT: 28 in Listening, 29 Reading, 30 Writing, 26 Speaking</li>
+							</ul>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="elang" value="20" required>
+							<strong>Below the competent English :</strong>
+						</label>
+					</div>					
 				</div>
-				<div class="row">
-					<label>
-						<span>Skilled Employment in last 10 Years - in Australia</span>
-						<select name="employment_australia" id="employment_australia">
-							<option value="0"> Select </option>
-							<option value="0">Less than 1 Year</option>
-							<option value="5">1 - 2 Years</option>
-							<option value="10">3 - 4 Years</option>
-							<option value="15">5 - 7 Years</option>
-							<option value="20">8 – 10 Years</option>
-						</select>
-					</label>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>My English Language is:</h3>
+						<label class="controll-label">
+							<input type="radio" name="elang" value="0" required>
+							<strong>Competent English: </strong> <br>
+							<ul>
+								<li>Passport from UK, USA, Ireland, Canada or NZ; or</li>
+								<li>IELTS: 6+ in each component; or</li>
+								<li>PTE Academic: 50+ in each component; or</li>
+								<li>Cambridge (CAE): 169+ in each component; or</li>
+								<li>TOEFL iBT: 12 in Listening, 13 Reading, 21 Writing, 18 Speaking</li>
+							</ul>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="elang" value="10" required>
+							<strong>Proficient English:</strong> <br>
+							<ul>
+								<li>IELTS: 7+ in each component; or</li>
+								<li>OET: B pass in each component; or</li>
+								<li>PTE Academic: 65+ in each component; or</li>
+								<li>Cambridge (CAE): 185+ in each component; or</li>
+								<li>TOEFL iBT: 24 in Listening, 24 Reading, 27 Writing, 23 Speaking</li>
+							</ul>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="elang" value="20" required>
+							<strong>Superior English:</strong> <br>
+							<ul>
+								<li>IELTS: 8+ in each component; or</li>
+								<li>OET: A pass in each component; or</li>
+								<li>PTE Academic: 79+ in each component; or</li>
+								<li>Cambridge (CAE): 200+ in each component; or</li>
+								<li>TOEFL iBT: 28 in Listening, 29 Reading, 30 Writing, 26 Speaking</li>
+							</ul>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="elang" value="20" required>
+							<strong>Below the competent English :</strong>
+						</label>
+					</div>					
 				</div>
-				<div class="row">
-					<label>
-						<span>Qualifications</span>
-						<select name="qualification" id="qualification" class="mb15">
-							<option value="0"> Select</option>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>My Australian Educational Qualification</h3>
+						<label class="controll-label">
+							<input type="radio" name="auskvisa" value="0" required> <strong> Yes : </strong> Diploma, Advanced Diploma, Degree, or trade qualification(s) taking minimum two years of full-time study at an Australian Educational Institution.  
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="auskvisa" value="5"> <strong> NO </strong>
+						</label>
+						<div class="ausqua">
+							<h5>My study in Australian regional area</h5>
+							<label class="controll-label">
+								<input type="radio" name="stau" value="5"> <strong> Yes </strong>
+								<input type="radio" name="stau" value="5"> <strong> No </strong>
+							</label>
+							<h5>Professional year </h5>
+							<label class="controll-label">
+								<input type="radio" name="pryear" value="5"> <strong> Yes </strong>
+								<input type="radio" name="pryear" value="0"> <strong> No </strong>
+							</label>
+						</div>
+					</div>					
+				</div>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>My Education Qualifications (Except Australia)</h3>
+						<h4>What is your highest/top Qualification?</h4>
+						<label class="controll-label">
+							<input type="radio" name="eqea" value="20" required>
+							<strong>Valid and recognized PhD (Doctorate</strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="eqea" value="15" required>
+							<strong>Valid and recognized Bachelor degree or higher</strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="eqea" value="10" required>
+							<strong>: Valid and recognized Trade Qualification including</strong> <br>
+							<ul>
+								<li>Diploma or Trade Certificate acquired at an Australian educational institution</li>
+								<li>Other award or educational qualification recognized by the relevant skills assessing authority</li>
+							</ul>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="eqea" value="15" required>
+							<strong>No Valid/ recognized Qualifications</strong>
+						</label>
+					</div>					
+				</div>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>Australian Work Experience</h3>
+						<h4>Regarding your work experience in Australia, in the last ten years, for what duration you have worked in occupation you have nominated or any related skilled occupation</h4>
+						<label class="controll-label">
+							<input type="radio" name="awe" value="20" required>
+							<strong>8 Years or more</strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="awe" value="15" required>
+							<strong>5 Years or more</strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="awe" value="10" required>
+							<strong>3 Years or more </strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="awe" value="5" required>
+							<strong>1 Year or more</strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="awe" value="0" required>
+							<strong>Less than one year </strong>
+						</label>						
+					</div>					
+				</div>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>My Work Experience (Except Australia)</h3>
+						<h4>With regards to your foreign work experience, in the last ten years, till what duration you have worked in the occupation you have nominated or related skilled occupation:</h4>
+						<label class="controll-label">
+							<input type="radio" name="weea" value="15" required>
+							<strong>8 Years or more </strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="weea" value="10" required>
+							<strong>5 Years or more </strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="weea" value="5" required>
+							<strong>3 Years or more </strong>
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="weea" value="0" required>
+							<strong>Less than 3 years </strong>
+						</label>											
+					</div>					
+				</div>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>Will I get any additional points?</h3>
+						<h4>My Partner Skill Qualifications</h4>
+						<label class="controll-label">
+							<input type="checkbox" name="page" value="yes" required>
+							<strong>My partner is aged below 50</strong>
+						</label>
+						<label class="controll-label">
+							<input type="checkbox" name="page" value="yes" required>
+							<strong>My partner has competent English skills</strong>
+						</label>
+						<label class="controll-label">
+							<input type="checkbox" name="page" value="yes" required>
+							<strong>My partner can pass skills assessment in an occupation (for my skilled visa) on the relevant Skilled Occupations List.</strong>
+						</label>																	
+					</div>					
+				</div>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>Designated Language</h3>
+						<h4>Do any of the following apply to you?</h4>
+						<label class="controll-label">
+							<input type="radio" name="page" value="5" required>
+							I am certified as a Para-professional interpreter or translator (level 2) by the National Accreditation Authority (NAA) for Translators and Interpreters
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="page" value="5" required> None of the above 
+						</label>																	
+					</div>					
+				</div>
+				<div class="form-wrap">
+					<div class="form-row">
+						<h3>Others </h3>
+						<h4>Will I get any additional points?</h4>
+						<p>Sponsorship by state or territory government</p>
+						<label class="controll-label">
+							<input type="radio" name="page" value="5" required> Yes 
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="page" value="5" required> No 
+						</label>	
 
-							<option value="20" class="optionWrap">Doctorate from an Australian Education Institute/ other doctorate of a recognised standard </option>
-
-							<option value="15" class="optionWrap">At least a Bachelor Degree from Australian Education Institution </option>
-							<option value="10" class="optionWrap">A Diploma or Trade Qualification completed in Australia</option>
-							<option value="10" class="optionWrap">An award or qualification recognised by the assessing authority in the assessment of skilled occupation</option>
-						</select>
-					</label>
+						<p>Sponsorship by family or state or territory government to regional Australia</p>
+						<label class="controll-label">
+							<input type="radio" name="page" value="5" required> Yes 
+						</label>
+						<label class="controll-label">
+							<input type="radio" name="page" value="5" required> No 
+						</label>																	
+					</div>					
 				</div>
-				<div class="row">
-					<label><span>Australian Study Requirements</span></label>
-					<label for="australia_requirment" class="checkbox-label mb15">
-						<input type="checkbox" value="5" name="australia_requirment" id="australia_requirment"> One or more degrees, diplomas or trade qualifications awarded by an Australian education institution and meet the </label>
+				<div class="form-wrap">
+					<div class="form-row">
+						<div class="col-md-3">Name</div>
+						<div class="col-md-9"><input type="text" name="name" class="form-ctrl"> </div>
+					</div>	
+					<div class="form-row">
+						<div class="col-md-3">Email</div>
+						<div class="col-md-9"><input type="email" name="email" class="form-ctrl"> </div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3">Phone</div>
+						<div class="col-md-9">
+							<input type="text" name="phone" class="form-ctrl">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3">Mobile</div>
+						<div class="col-md-9">
+							<input type="text" name="mobile" class="form-ctrl">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3">Address</div>
+						<div class="col-md-9">
+							<input type="text" name="adrs" class="form-ctrl">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3">Country</div>
+						<div class="col-md-9">
+							<input type="text" name="country" class="form-ctrl">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3">District</div>
+						<div class="col-md-9">
+							<input type="text" name="district" class="form-ctrl">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3">Thana</div>
+						<div class="col-md-9">
+							<input type="text" name="thana" class="form-ctrl">
+						</div>
+					</div>
 				</div>
-				<div class="row">
-					<label><span>Specialist Education Qualification</span></label>
-					<label for="education_qualification" class="checkbox-label mb15">
-						<input type="checkbox" value="5" name="education_qualification" id="education_qualification"> Masters degree by Research through a course or courses taken for at least 2 academic years at an Australian 
-					</label>
-				</div>
-				<div class="row">
-					<label><span>Others</span></label>
-					<label for="comunity" class="checkbox-label">
-						<input type="checkbox" value="5" name="comunity" id="comunity"> Credentialled community language qualifications
-					</label>
-					<label for="regional" class="checkbox-label">
-						<input type="checkbox" value="5" name="regional" id="regional"> Study in regional Australia  
-					</label>
-					<label for="partner" class="checkbox-label">
-						<input type="checkbox" value="5" name="partner" id="partner"> Partner skill qualifications 
-					</label>
-					<label for="professional_year" class="checkbox-label">
-						<input type="checkbox" value="5" name="professional_year" id="professional_year"> Professional Year of study in Australia for at least 12 Months 
-					</label>
-				</div>
-				<div  class="row" style="margin-top: 10px;">
-					<button name="total" type="button" id="total" class="calculate">Total  Points </button>
-				</div>
-			</div>
-			<div class="second-stepform">
-				<div  class="row">
-					<label>
-						<span>Name : (required)</span>
-						<input placeholder="Please enter your name" name="your_name" type="text" tabindex="1" required autofocus>
-					</label>
-				</div>
-				<div class="row">
-					<label>
-						<span>Email : (required)</span>
-						<input placeholder="Please enter your email address" type="email" name="your_email" tabindex="2" required>
-					</label>
-				</div>
-				<div class="row">
-					<label>
-						<span>Mobile : (required)</span>
-						<input placeholder="Please enter your number" name="your_mobile" type="tel" tabindex="3" required>
-					</label>
-				</div>
-				<div class="row">
-					<label>
-						<span>Message : (required)</span>
-						<textarea placeholder="Include all the details you can" name="message" tabindex="5" required></textarea>
-					</label>
-				</div>
-				<div class="row">
-					<input type="hidden" name="score" id="score">
-					<button name="submit" type="submit" id="contact-submit">Submit Now</button>
-				</div>				
-			</div>			
+			</div>		
 		</form>
 		<?php  } ?>
+
+		<h5>To get the below visas please communicate at our office</h5>
+		<ul>
+			<li>Australian Business Visa Points Test Calculator</li>
+			<li>Australian Partner Visa Assessment (instant)</li>
+			<li>New Zealand Points Calculator for Skilled Migration (instant)</li>
+			<li>Visa Assessment Corporate Immigration Solutions</li>
+		</ul>
 
 		<!-- /Form -->		
 		</div>
